@@ -19,7 +19,7 @@ export class CadastroService {
   }
 
   update(cadastro: Cadastro): Observable<Cadastro>{
-    return this.http.post<Cadastro>(this.baseUrl, cadastro);
+    return this.http.put<Cadastro>(this.baseUrl, cadastro);
   }
 
   read(): Observable<Cadastro[]>{
