@@ -38,10 +38,8 @@ registerLocaleData(localePt);
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    CadastroCreateComponent,
     CadastroReadComponent,
     CadastroTabelaComponent,
-    CadastroUpdateComponent,
     CadastroDeleteComponent,
   ],
   imports: [

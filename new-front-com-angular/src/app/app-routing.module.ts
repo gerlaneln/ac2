@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './views/home/home.component';
@@ -7,6 +7,7 @@ import { CadastroCreateComponent } from './components/cadastro/cadastro-create/c
 import { CadastroTabelaComponent } from './components/cadastro/cadastro-tabela/cadastro-tabela.component';
 import { CadastroUpdateComponent } from './components/cadastro/cadastro-update/cadastro-update.component';
 import { CadastroDeleteComponent } from './components/cadastro/cadastro-delete/cadastro-delete.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const routes: Routes = [ 
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppRoutingModule { }
