@@ -40,7 +40,7 @@ registerLocaleData(localePt);
     HomeComponent,
     CadastroReadComponent,
     CadastroTabelaComponent,
-    CadastroDeleteComponent,
+    CadastroDeleteComponent
   ],
   imports: [
     BrowserModule,
